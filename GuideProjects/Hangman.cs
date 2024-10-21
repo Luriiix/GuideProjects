@@ -79,7 +79,7 @@ public class Hangman {
 
 
 	private static string ChooseWord() {
-		var words = File.ReadAllLines("C:\\Users\\lurix\\RiderProjects\\Guide Projects\\Hangman\\Hangman\\words.txt");
+		var words = File.ReadAllLines(@"..\..\..\words.txt");
 		return words[_random.Next(0, words.Length)];
 	}
 
